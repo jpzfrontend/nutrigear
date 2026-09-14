@@ -1,0 +1,141 @@
+/* ---------- Variables de marca ---------- */
+:root {
+  --color-primario: #2E5C4A;
+  --color-acento: #E8A33D;
+  --color-fondo: #F5F5F5;
+  --color-texto: #333333;
+}
+
+/* ---------- Reset básico ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.5;
+}
+
+/* ---------- Header y navegación ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primario);
+  padding: 16px 32px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+.carrito {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- Sección principal (Home) ---------- */
+.hero {
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: var(--color-primario);
+}
+
+/* ---------- Listado de productos (grilla) ---------- */
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 32px;
+  justify-content: center;
+}
+
+.producto {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto button {
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+/* ---------- Formularios (versión base, se refina mañana) ---------- */
+.formulario {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: var(--color-primario);
+  color: white;
+  margin-top: 40px;
+}
