@@ -68,6 +68,11 @@ nav a:hover {
   color: var(--color-primario);
 }
 
+.productos-destacados {
+  text-align: center;
+  padding: 32px 24px;
+}
+
 /* ---------- Listado de productos (grilla) ---------- */
 .lista-productos {
   display: flex;
@@ -138,4 +143,54 @@ footer {
   background-color: var(--color-primario);
   color: white;
   margin-top: 40px;
+}
+
+/* ---------- Mensajes de error (para las validaciones) ---------- */
+.error-message {
+  display: none;
+  color: #C0392B;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* ---------- Foco en formularios ---------- */
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--color-acento);
+  box-shadow: 0 0 0 2px rgba(232, 163, 61, 0.3);
+}
+
+/* ---------- Responsive: tablets y celulares (768px o menos) ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .lista-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  .formulario {
+    width: 90%;
+    margin: 24px auto;
+    padding: 20px;
+  }
 }
